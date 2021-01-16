@@ -1,19 +1,19 @@
-'use strict'
-
-const AWS = require('aws-sdk')
-const uuid = require('uuid')
+import { APIGatewayProxyHandler, APIGatewayProxyEvent, APIGatewayProxyResult } from 'aws-lambda'
+import 'source-map-support/register'
+import * as AWS  from 'aws-sdk'
+import * as uuid from 'uuid'
 
 const docClient = new AWS.DynamoDB.DocumentClient()
 const groupsTable = process.env.GROUPS_TABLE
 
-exports.handler = async (event) => {
+export const handler: APIGatewayProxyHandler = async (event: APIGatewayProxyEvent): Promise<APIGatewayProxyResult> => {
   console.log('Processing event: ', event)
-  const itemId = uuid.v4()
 
+  const uuidv4 = uuid.v4()
   const parsedBody = JSON.parse(event.body)
 
   const newItem = {
-    id: itemId,
+    id: uuidv4,
     ...parsedBody // name, description
   }
 
