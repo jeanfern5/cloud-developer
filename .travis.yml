@@ -39,7 +39,8 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t course-03-nd9990-c3-microservices-v2/lesson-3-independent-releases/exercises/travis_env_var_exercise/.travis.yml simple-node .
+  - cd course-03-nd9990-c3-microservices-v2/lesson-3-independent-releases/exercises/travis_env_var_exercise
+  - docker build -t simple-node .
   - docker tag simple-node jeanfern5/simple-node:latest
 
 after_success:
