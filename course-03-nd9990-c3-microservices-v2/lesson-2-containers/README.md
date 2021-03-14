@@ -1,7 +1,7 @@
 # Lesson 2: Containers
 
 ## Sample Dockerfile
-    ```
+  ```
   # Use NodeJS base image
   FROM node:13
 
@@ -62,13 +62,13 @@
 
 
 ## New Terms in This Lesson
-  | Term	| Definition |
+  | Term | Definition |
   | ------------- | ------------- |
-  | Base Image	| A set of common dependencies built into a Docker image that acts as a starting point to build an application’s Docker images to reduce build times |
-  | Container	| Grouped software dependencies and packages that make it easier and more reliable to deploy software |
-  | Container Registry	| A centralized place to store container images |
-  | Docker-compose	| A tool used to run multiple Docker containers at once; often used to specify dependent relationships between containers |
-  | Dockerfile	| A file containing instructions on how to translate an application into an image that can be run in containers |
-  | Ephemeral	| Software property where an application is expected to be short-lived |
-  | Image	| A snapshot of dependencies and code used by Docker containers to run an application |
+  | Base Image | A set of common dependencies built into a Docker image that acts as a starting point to build an application’s Docker images to reduce build times |
+  | Container | Grouped software dependencies and packages that make it easier and more reliable to deploy software |
+  | Container Registry | A centralized place to store container images |
+  | Docker-compose | A tool used to run multiple Docker containers at once; often used to specify dependent relationships between containers |
+  | Dockerfile | A file containing instructions on how to translate an application into an image that can be run in containers |
+  | Ephemeral | Software property where an application is expected to be short-lived |
+  | Image | A snapshot of dependencies and code used by Docker containers to run an application |
   | System Process | A computer program run by the operating system |
