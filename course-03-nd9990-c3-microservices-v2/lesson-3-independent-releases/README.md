@@ -32,4 +32,8 @@ after_success:
 ## Resources:
 - [The Art of Shipping Early and Often](https://www.ycombinator.com/library/40-the-art-of-shipping-early-and-often)
 - [Travis CI Features](https://docs.travis-ci.com/user/for-beginners/)
-
+    - [Best Practices in Securing Your Data](https://docs.travis-ci.com/user/best-practices-security/)
+- Alternative CI Tools:
+    - [Jenkins](https://www.jenkins.io) - most flexible but more overhead of setup
+    - [CircleCI](https://circleci.com) - alternative to Travis CI with many competing features
+    - [AWS CodeBuild](https://aws.amazon.com/codebuild) - integrates easily with other AWS tools
