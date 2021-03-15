@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubernetes-on-aws
+  labels:
+    run: kubernetes-on-aws
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+  selector:
+    run: kubernetes-on-aws
